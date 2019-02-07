@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Listing writers</h1>
+
+  <%= link_to 'New writer', new_writer_path %>
+
+  <img src='/assets/avatar.png' />
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Bio</th>
+      <th></th>
+    </tr>
+
+    <% @writers.each do |writer| %>
+      <tr>
+        <td><%= writer.name %></td>
+        <td><%= writer.bio %></td>
+        <td><%= link_to 'Edit', edit_writer_path(writer) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

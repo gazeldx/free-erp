@@ -1,0 +1,38 @@
+zh:
+  site:
+    name: "圣哲思"
+
+  home:
+    banner_title: "学习圣哲，启发思维，成就人生！"
+    banner_desc: "立必为圣贤之志，勤读圣人之书，改正自我的过失，体悟大道的乐趣。"
+    banner_link: "开始品读《传习录》"
+
+  activerecord:
+    errors:
+      full_messages:
+        format: "%{attribute} %{message}"
+
+  errors:
+    format: "%{attribute} %{message}"
+    messages: &errors_messages
+      inclusion: "不包含于列表中"
+      exclusion: "是保留关键字"
+      invalid: ""
+      confirmation: "与确认值不匹配"
+      accepted: "必须是可被接受的"
+      empty: "不能留空"
+      blank: "是必填项"
+      too_long: "过长（最长为 %{count} 个字符）"
+      too_short: "过短（最短为 %{count} 个字符）"
+      wrong_length: "长度非法（必须为 %{count} 个字符）"
+      not_a_number: "不是数字"
+      not_an_integer: "必须是整数"
+      greater_than: "必须大于 %{count}"
+      greater_than_or_equal_to: "必须大于或等于 %{count}"
+      equal_to: "必须等于 %{count}"
+      less_than: "必须小于 %{count}"
+      less_than_or_equal_to: "必须小于或等于 %{count}"
+      odd: "必须为单数"
+      even: "必须为双数"
+      taken: "应该是唯一的。系统里已经存在这个值，请修改！"
+      record_invalid: "验证失败: %{errors}"

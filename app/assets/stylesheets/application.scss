@@ -1,0 +1,7 @@
+//https://github.com/twbs/bootstrap-rubygem#a-ruby-on-rails
+//https://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
+
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+@import "*";
+@import "**/*";

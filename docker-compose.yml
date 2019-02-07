@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+#    image: username/repo:tag
+    image: gazeldx/thinkingcms:latest
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: 100M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "3030:80"
+    volumes:
+      - .:/app
+    networks:
+      - webnet
+networks:
+  webnet:
